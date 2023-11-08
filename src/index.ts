@@ -1,7 +1,17 @@
-import { ContaBancaria } from "./classes/BankAccount"
+//Objeto != Classe
+//Propriedades: Variáveis
+//Método: função 
 
-const Raphael = new ContaBancaria("Raphael Medeiros", 2121)
+const Smartphone = {
+  brand: "Apple",
+  model: "iPhone 15",
+  date: 2023,
+  opiniao(){
+    console.log("The Best Smartphone Ever!")
+    },
+  avaliacao (score: number){
+    console.log("This iPhone has",score,"like score.")
+    }
+ }
 
-Raphael.deposito(100000)
-
-console.log("R$ "+Raphael.saldo)
+ Smartphone.avaliacao(10)
